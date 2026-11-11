@@ -954,6 +954,13 @@ do
     -- I recommend you set a version range
     version = vim.version.range('^9')
   }}
+
+  vim.pack.add({"https://github.com/akinsho/toggleterm.nvim"})
+
+  require("toggleterm").setup({
+    open_mapping = [[<c-d>]],
+    direction = 'float'
+  })
 end
 
 -- The line beneath this is called `modeline`. See `:help modeline`
